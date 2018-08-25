@@ -6,23 +6,30 @@ p {
     color: maroon;
   }
   
+  h2.destination {
+    font-family: cursive;
+  }
+  
   .title {
     color: teal;
   }
   
-  .uppercase{
+  .uppercase {
     text-transform: uppercase;
   }
-  
   .publish-time {
     color: gray;
   }
   
-  .cursive{
+  .cursive {
     font-family: cursive;
   }
   
-  .capitalize{
+  .capitalize {
     text-transform: capitalize;
+  }
+  
+  .description h5 {
+    color: teal;
   }
   
