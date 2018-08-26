@@ -1,7 +1,11 @@
-let hungerLevel = 10;
+let moonPhase = 'solar eclipse';
 
-if (hungerLevel > 7) {
-  console.log("Time to eat!");
+if (moonPhase === 'full') {
+  console.log('Howl!');
+} else if (moonPhase === 'mostly full')  {
+  console.log('Arms and legs are getting hairier');
+} else if (moonPhase === 'mostly new') {
+    console.log('Back on two feet.');
 } else {
-  console.log("We can eat later!");
+  console.log('Invalid moon phase');
 }
