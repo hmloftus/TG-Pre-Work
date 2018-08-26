@@ -1,201 +1,310 @@
-/* Universal Styles */
-
+/* abril-fatface-regular - latin */
 @font-face {
-  font-family: "Glegoo";
-  src: url(../fonts/Glegoo-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Space Mono';
+  font-family: 'Abril Fatface';
   font-style: normal;
   font-weight: 400;
-  src: local('Space Mono'), local('SpaceMono-Regular'), url(https://fonts.gstatic.com/s/spacemono/v1/adVweg3BJhE6r8jYmXseHQzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  src: url('../fonts/abril-fatface-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Abril Fatface'), local('AbrilFatface-Regular'),
+       url('../fonts/abril-fatface-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/abril-fatface-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/abril-fatface-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/abril-fatface-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/abril-fatface-v9-latin-regular.svg#AbrilFatface') format('svg'); /* Legacy iOS */
+}
+
+/* work-sans-regular - latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/work-sans-v3-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Work Sans'), local('WorkSans-Regular'),
+       url('../fonts/work-sans-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/work-sans-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/work-sans-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/work-sans-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/work-sans-v3-latin-regular.svg#WorkSans') format('svg'); /* Legacy iOS */
+}
+/* work-sans-500 - latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/work-sans-v3-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Work Sans Medium'), local('WorkSans-Medium'),
+       url('../fonts/work-sans-v3-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/work-sans-v3-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/work-sans-v3-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/work-sans-v3-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/work-sans-v3-latin-500.svg#WorkSans') format('svg'); /* Legacy iOS */
+}
+/* work-sans-800 - latin */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/work-sans-v3-latin-800.eot'); /* IE9 Compat Modes */
+  src: local('Work Sans ExtraBold'), local('WorkSans-ExtraBold'),
+       url('../fonts/work-sans-v3-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/work-sans-v3-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/work-sans-v3-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/work-sans-v3-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/work-sans-v3-latin-800.svg#WorkSans') format('svg'); /* Legacy iOS */
+}
+
+/* merriweather-regular - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/merriweather-v19-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Merriweather Regular'), local('Merriweather-Regular'),
+       url('../fonts/merriweather-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/merriweather-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/merriweather-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/merriweather-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/merriweather-v19-latin-regular.svg#Merriweather') format('svg'); /* Legacy iOS */
+}
+/* merriweather-italic - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/merriweather-v19-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('Merriweather Italic'), local('Merriweather-Italic'),
+       url('../fonts/merriweather-v19-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/merriweather-v19-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/merriweather-v19-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/merriweather-v19-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/merriweather-v19-latin-italic.svg#Merriweather') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-  font-family: 'Space Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(https://fonts.gstatic.com/s/spacemono/v1/vdpMRWfyjfCvDYTz00NEPGaVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  src: url ("styles/fonts/CroissantOne-Regular.tff");
 }
 
 html {
-  font-size: 16px;
-  font-family: "Arial", sans-serif;
+  font-size: 18px;
 }
 
-body {
-  background-color: #F2F2F2;
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
 }
 
-h1 {
-  color: white;
-  font-size: 28px;
-  font-family: Georgia;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 2.5;
-  font-family: Georgia;
-  word-spacing: 0.05em;
-  letter-spacing: 0.02em;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin: 16px 0;
-  font-family: Helvetica;
-}
-
-strong {
-  font-weight: bold;
-}
-
-#serif, /* Offset linked sections to account for header. */
-#sans,
-#mono {
-  padding-top: 77px;
-  margin-top: -77px;
+@media only screen and (max-width: 680px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 /* Header */
 
 .header {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 1.25;
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  font-weight: 900;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4.44rem;
+  padding: 0 12%;
+  background-color: white;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+  font-family: Verdana, sans-serif;
+  font-size: .77rem;
+  font-weight: bold;
+}
+
+.header .logo {
+  flex-grow: 1;
+  color: #ffb78c;
 }
 
 .header li {
-  display: inline-block;
+  display: inline;
+  padding-right: 2.22rem;
 }
 
-.header a {
-  display: block;
-  color: #4A4A4A;
-  padding: 30px 20px;
+.header li a {
+  text-decoration: none;
+  color: #4a4a4a;
 }
 
-a.home {
-  color: #4D00FF;
+@media only screen and (max-width: 550px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header .logo {
+    flex-grow: 0;
+  }
 }
 
-
-/* Banner Section */
+/* Banner */
 
 .banner {
-  background-color: #4D00FF;
-  padding: 100px 0;
-  margin-top: 77px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-6/project-morocco/banner.jpg") center center no-repeat;
+  background-size: cover;
+  color: #ffb78c;
 }
 
-.banner p {
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  padding: 10px;
-  color: #ffffff;
-  font-weight: bold;
-  line-height: 1.4;
-  font-family: "Glegoo";
-  font-size: 20px;
+.banner h2 {
+  padding: .55rem 0;
+  border-top: 4px solid #ffb78c;
+  border-bottom: 4px solid #ffb78c;
+  font-size: 1.44rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: "Work Sans", sans-serif;
 }
 
-/* Editorial Sections */
-
-.editorial {
-  padding: 20px;
-  margin: 20px 0;
-  text-align: center;
-  color: #4C4C4C;
-}
-
-/* Font Card Sections */
-
-.font-card {
-  background-color: #ffffff;
-  margin: 50px 0;
-  padding: 20px 50px;
-}
-
-.font-card .creator {
-  font-size: 20px;
-  line-height: 1.25;
-  font-style: italic;
-}
-
-.sample {
-  display: inline-block;
-  padding: 0 20px;
-  margin: 20px;
-}
-
-.sample h2 {
-  line-height: 1.5;
-}
-
-.sample .text {
-  color: #4D00FF;
-  font-size: 100px;
-}
-
-/* Add styles for the Garamond font here */
-
-.garamond .sample .text {
-  font-family: Garamond, serif;
-}
-
-/* Add styles for the Helvetica font here */
-
-.helvetica .sample .text {
-  font-family: Helvetica, sans-serif;
-}
-
-/* Add styles for the Space Mono font here */
-
-.space .sample .text {
-  font-family: "Space Mono", monospace;
-}
-
-.bold {
+.banner h1 {
+  padding-top: 1.11rem;
+  font-size: 11rem;
   font-weight: 900;
+  font-family: "Abril Fatface", sans-serif;
 }
 
-.regular {
-  font-weight: normal;
+@media only screen and (max-width: 750px) {
+  .banner {
+    height: 40rem;
+  }
+
+  .banner h1 {
+    font-size: 8rem;
+  }
 }
 
-.italic {
-  font-weight: normal;
+@media only screen and (max-width: 530px) {
+  .banner {
+    height: 30rem;
+  }
+
+  .banner h1 {
+    font-size: 6rem;
+  }
+}
+
+/* Journal */
+
+.journal {
+  padding: 0 25% 4rem 25%;
+  background-color: rgb(254, 231, 218);
+  color: #4a4a4a;
+  font-family: "Work Sans", serif;
+}
+
+.photo {
+  width: 75%;
+  padding: 1.11rem;
+  border-radius: 5px;
+  margin: 0 auto 4.44rem auto;
+  background-color: white;
+}
+
+.photo .image-container {
+  overflow: hidden;
+  margin-bottom: 1.11rem;
+}
+
+.photo .image-container img {
+  width: 100%;
+}
+
+.photo .caption {
   font-style: italic;
+  font-family: "Merriweather", serif;
 }
 
-/* Media Queries */
+.photo.first {
+  position: relative;
+  top: -2.77rem;
+  margin-bottom: 1.67rem;
+}
 
-@media only screen and (max-width: 535px) {
-  .header {
-    font-size: 14px;
-  }
+.journal p {
+  padding-bottom: 2.77rem;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
 
-  .header a {
-    padding: 30px 20px;
-  }
+.journal .first-letter {
+  float: left;
+  padding-right: 1.4rem;
+  font-family: "Abril Fatface", serif;
+  font-size: 7.44rem;
+  color: #10b0d8;
+  line-height: .87;
+}
 
-  a.home {
-    display: none;
+.quote {
+  display: block;
+  padding: 4.44rem 0;
+  margin-bottom: 3.33rem;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  text-align: center;
+  font-size: 3.55rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 680px) {
+  .journal {
+    padding: 0 10% 4rem 10%;
   }
 }
 
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 0 1%;
+  background-color: #212121;
+  line-height: 1.5;
+  font-family: "Croissant One", "Merriweather", serfif;
+}
+
+footer .image-container {
+  width: 400px;
+}
+
+footer .content {
+  flex-grow: 1;
+  font-style: italic;
+  color: #9b9b9b;
+}
+
+footer p {
+  padding-bottom: 1.66rem;
+}
+
+footer p:last-child {
+  padding-bottom: 0;
+}
+
+footer .author {
+  color: #ffb78c;
+}
+
+footer em {
+  color: #cfcfcf;
+}
+
+@media only screen and (max-width: 750px) {
+  footer {
+    flex-direction: column;
+    padding: 0 10% 2rem 10%;
+  }
+
+  footer .image-container {
+    height: 300px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+}
