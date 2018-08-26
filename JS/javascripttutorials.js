@@ -1,4 +1,3 @@
-console.log(28 + 3.5);
-console.log(2018-1969);
-console.log(65/240);
-console.log(.2708*100);
+console.log(Math.floor(Math.random() * 100))
+console.log(Math.ceil(43.8))
+console.log(Number.isInteger(2017))
