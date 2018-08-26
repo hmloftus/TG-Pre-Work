@@ -57,10 +57,7 @@ h2 {
   font-size: 14px;
   line-height: 48px;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 20px 30px;
 }
 
 h3 {
@@ -74,6 +71,7 @@ p {
   color: grey;
   font-size: 16px;
   line-height: 48px;
+  padding: 10px 20px;
 }
 
 .pull-quote {
@@ -101,8 +99,8 @@ p {
   border-radius: 3px;
   color: white;
   display: inline-block;
-  text-decoration: none;
   padding: 14px;
+  text-decoration: none;
 }
 
 .share a:hover {
