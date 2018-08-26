@@ -1,3 +1,5 @@
+
+
 body {
   background-color: white;
   font-family: 'Raleway', sans-serif;
@@ -41,7 +43,6 @@ body {
 #main {
   padding: 40px;
   text-align: center;
-  width: 400px;
   margin: 0 auto;
 }
 
@@ -75,6 +76,10 @@ p {
   line-height: 48px;
   margin-top: 60px;
   padding: 10px 20px;
+  min-width: 200px;
+  max-width: 800px;
+  min-height: 200px;
+  max-height: 300px;
 }
 
 .pull-quote {
