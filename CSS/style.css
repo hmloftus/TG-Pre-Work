@@ -1,149 +1,149 @@
-html, body {
-  margin: 0;
+body {
   padding: 0;
-}
-
-header {
-  background-color: #333333;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
-nav {
   margin: 0;
-  padding: 20px 0;
+  background: #F7F7F7;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #F7F7F7 0%, #EAE0D5 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #F7F7F7 0%, #EAE0D5 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #F7F7F7 0%, #EAE0D5 100%);
 }
 
-nav li {
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  display: inline-block;
-  width: 80px;
+/** Header styles **/
+.header {
+  background-image: url(https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
+  height: 400px;
+  background-position: center center;
 }
 
-main {
+.roasting {
+  margin: 40px auto;
+  padding: 20px 30px 40px 30px;
+  background-color: #FFFFFFFFF;
+  overflow: auto;
+  width: 75%;
+  border-radius: 4px;
+  align-self: center;
+}
+
+.roasting p {
+  color: #938E89;
   text-align: center;
-  position: relative;
-  top: 80px;
-}
-
-main h1 {
-  color: #333;
+  line-height: 24px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 70px;
-  margin-top: 0px;
-  padding-top: 80px;
-  margin-bottom: 80px;
-  text-transform: uppercase;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 30px 0;
-}
-
-footer p {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 11px;
-}
-
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-  text-align: center;
-}
-
-.jumbotron {
-  height: 800px;
-  background-image: url("http://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.btn-main {
-  background-color: #333;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 1.3px;
-  padding: 16px 40px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.btn-default {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 10px;
-  letter-spacing: 1.3px;
-  padding: 10px 20px;
-  text-decoration: none;
-  text-transform: uppercase;  
-  margin-bottom: 20px;      
-}
-
-.supporting {
-  padding-top: 80px;
-  padding-bottom: 100px;
-}
-
-.supporting .col {
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-}
-
-.supporting img {
-  height: 32px;
-}
-
-.supporting h2 {
-  font-weight: 600;
-  font-size: 23px;
-  text-transform: uppercase;
-}
-
-.supporting p {
+  font-size: 16px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+}
+
+.spectrum div {
+  font: inherit;
   padding: 0 20px;
-  margin-bottom: 20px;
+  color: #FFFFFF;
+  overflow: auto;
+  opacity: 0.9;
 }
 
-.supporting a {
-  background-color: white;
-  color: #333333;
+.spectrum p {
+  color: #FFFFFF;
+  text-align: left;
+}
+
+/* Roast types */
+.green {
+  background-color: DarkSeaGreen;
+}
+
+.light {
+  background-color: Sienna;
+}
+
+.city {
+  background-color: SaddleBrown;
+}
+
+.vienna {
+  background-color: Brown;
+}
+
+.italian {
+  background-color: Black;
+}
+
+/* Typography */
+h1 {
+  color: MidnightBlue;
+  background-color: Aqua;
+  font-family: 'Covered By Your Grace', sans-serif;
+  font-size: 100px;
+  line-height: 76px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  top: 20%;
+}
+
+h2 {
+  color: #E4BB97;
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 1.3px;
-  text-decoration: none;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: left;
   text-transform: uppercase;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #333333; 
 }
 
-@media (max-width: 500px) {
-  main h1 {
-    font-size: 50px;
-    padding: 0 40px;
-  }
-
-  .supporting .col {
-    width: 100%;
-  }
+h3 {
+  color: #41292C;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
 }
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: .2em;
+}
+
+h5 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  line-height: .2em;
+  font-weight: 300;
+}
+
+/* Page elements */
+ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 75%;
+}
+
+li {
+  border-bottom: 1px solid #E4BB97;
+  list-style: none;
+  margin: 100px 0px;
+  padding-bottom: 60px;
+}
+
+p {
+  color: #444444;
+  line-height: 32px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+a {
+  color: #214E34;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
