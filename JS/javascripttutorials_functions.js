@@ -13,4 +13,14 @@ const getSubTotal = (itemCount) => {
   return itemCount * 7.5;
 };
 
+const getTax = (itemCount) => {
+  return getSubTotal(itemCount) * .06;
+}
+
+const getTotal = (itemCount) => {
+  return getSubTotal(itemCount) + getTax(itemCount);
+}
+
 console.log(getSubTotal(orderCount));
+
+console.log(getTotal(orderCount));
