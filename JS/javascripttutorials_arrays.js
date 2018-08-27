@@ -1,21 +1,16 @@
-const newYearsResolutions = ['eat', 'sleep', 'workout'];
+let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
 
-console.log(newYearsResolutions);
+const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
 
-let listItem = newYearsResolutions[0];
-console.log(listItem);
+condiments.push('BBQ');
+console.log(condiments);
+condiments = ['Dressing'];
+console.log(condiments);
 
-console.log(newYearsResolutions[2]);
-console.log(newYearsResolutions[3]);
+utensils.pop();
+console.log(utensils);
+utensils = ['Spork'];
+console.log(utensils);
 
-newYearsResolutions[1]= 'Learn a new language';
-console.log(newYearsResolutions);
 
-console.log(newYearsResolutions.length);
-
-newYearsResolutions.push('yoga', 'read');
-console.log(newYearsResolutions);
-
-newYearsResolutions.pop();
-console.log(newYearsResolutions);
 
