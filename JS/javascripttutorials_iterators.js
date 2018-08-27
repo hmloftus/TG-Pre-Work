@@ -1,12 +1,16 @@
-let randomNumbers = [375, 200, 3.14, 7, 13, 852];
+let words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
 
-// Call .filter() on randomNumbers below
+// Something is missing in the method call below
 
-let smallNumbers = randomNumbers.filter(num => num < 250);
+console.log(words.some(function(word) {
+  return word.length < 6;
+}));
 
-let favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+// Use filter to create a new array
 
-let longFavoriteWords = favoriteWords.filter(word => word.length > 7);
+let interestingWords = words.filter(word => word.length > 5);
 
-// Refactor the code above using arrow function syntax
+// Make sure to uncomment the code below and fix the incorrect code before running it
+
+console.log(interestingWords.every(word =>  word.length > 5      ));
 
