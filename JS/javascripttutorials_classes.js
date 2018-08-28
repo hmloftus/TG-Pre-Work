@@ -24,3 +24,6 @@ class Surgeon {
   
   const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
   const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+  console.log(surgeonCurry.name);
+  surgeonCurry.takeVacationDays(3);
+  console.log(surgeonCurry.remainingVacationDays);
