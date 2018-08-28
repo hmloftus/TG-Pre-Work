@@ -1,7 +1,13 @@
-const Airplane = require('./1-airplane.js');
+let Airplane = {};
 
-function displayAirplane(){
-  console.log(Airplane.myAirplane);
-}
+Airplane.availableAirplanes = [
+{
+  name: 'AeroJet',
+  fuelCapacity: 800
+ }, 
+ {name: 'SkyJet',
+  fuelCapacity: 500
+ }
+];
 
-displayAirplane();
+export default Airplane;
