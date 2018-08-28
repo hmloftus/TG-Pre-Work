@@ -1,41 +1,40 @@
 // Information to reach API
-const url = 'https://api.datamuse.com/words?';
-const queryParams = 'rel_jjb=';
-const additionalParams = '&topics=';
+const apiKey = '<Your API Key>';
+const url = 'https://api.rebrandly.com/v1/links';
 
-// Selecting page elements
+// Some page elements
 const inputField = document.querySelector('#input');
-const topicField = document.querySelector('#topic');
-const submit = document.querySelector('#submit');
+const shortenButton = document.querySelector('#shorten');
 const responseField = document.querySelector('#responseField');
 
-// AJAX function
-const getSuggestions = () => {
-  const wordQuery = inputField.value;
-  const topicQuery = topicField.value;
-  const endpoint = `${url}${queryParams}${wordQuery}${additionalParams}${topicQuery}`;
-  
+// AJAX functions
+const shortenUrl = () => {
+  const urlToShorten = inputField.value;
+  const data = JSON.stringify({destination: urlToShorten});
+
   const xhr = new XMLHttpRequest();
   xhr.responseType = 'json';
-
+  
   xhr.onreadystatechange = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
-      renderResponse(xhr.response);
-    }
+  		renderResponse(xhr.response);
+		}
   }
-  
-  xhr.open('GET', endpoint);
-  xhr.send();
+  xhr.open('POST', url);
+  xhr.setRequestHeader('Content-type', 'application/json');
+	xhr.setRequestHeader('apikey', apiKey);
+  xhr.send(data);
 }
 
-// Clear previous results and display results to webpage
-const displaySuggestions = (event) => {
+
+// Clear page and call AJAX functions
+const displayShortUrl = (event) => {
   event.preventDefault();
   while(responseField.firstChild){
     responseField.removeChild(responseField.firstChild);
   }
-  getSuggestions();
+  shortenUrl();
 }
 
-submit.addEventListener('click', displaySuggestions);
+shortenButton.addEventListener('click', displayShortUrl);
 
