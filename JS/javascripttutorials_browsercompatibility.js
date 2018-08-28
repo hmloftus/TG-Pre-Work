@@ -1,8 +1,12 @@
-var pasta = "Spaghetti"; // ES5 syntax
-
-var meat = "Pancetta"; // ES6 syntax
-
-var sauce = "Eggs and cheese"; // ES6 syntax
-
-// Template literals, like the one below, were introduced in ES6
-var carbonara = "You can make carbonara with " + pasta + ", " + meat + ", " + " and a sauce made with " + sauce + ".";
+/*For future reference, here is a list of the steps needed to set up a project for transpilation:
+Initialize your project using npm init and create a directory called src
+Install babel dependencies by running
+npm install babel-cli -D
+npm install babel-preset-env -D
+Create a .babelrc file inside your project and add the following code inside it:
+{
+  "presets": ["env"]
+}
+Add the following script to your scripts object in package.json:
+"build": "babel src -d lib"
+Run npm run build whenever you want to transpile your code from your src to libdirectories.*/
