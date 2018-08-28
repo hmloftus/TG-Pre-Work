@@ -1,20 +1,27 @@
-// Information to reach API
-const url = 'https://api.datamuse.com/words?';
-const queryParams = 'rel_jja=';
+// information to reach API
+const apiKey = '<Your API Key>';
+const url = 'https://api.rebrandly.com/v1/links';
 
-// Selecting page elements
+// Some page elements
 const inputField = document.querySelector('#input');
-const submit = document.querySelector('#submit');
+const shortenButton = document.querySelector('#shorten');
 const responseField = document.querySelector('#responseField');
 
-// AJAX function
+// AJAX functions
 // Code goes here
-const getSuggestions = async () => {
-  const wordQuery = inputField.value;
-  const endpoint = `${url}${queryParams}${wordQuery}`;
+const shortenUrl = async () => {
+	const urlToShorten = inputField.value;
+  const data = JSON.stringify({destination: urlToShorten});
   try {
-    const response = await fetch(endpoint);
-    if(response.ok){
+    const response = await fetch(url, {
+			method: 'POST',
+      body: data,
+      headers: {
+        'Content-type': 'application/json',
+				'apikey': apiKey
+      }
+    });
+		if(response.ok){
       const jsonResponse = await response.json();
       renderResponse(jsonResponse);
     }
@@ -23,14 +30,14 @@ const getSuggestions = async () => {
   }
 }
 
-// Clear previous results and display results to webpage
-const displaySuggestions = (event) => {
+// Clear page and call AJAX functions
+const displayShortUrl = (event) => {
   event.preventDefault();
   while(responseField.firstChild){
     responseField.removeChild(responseField.firstChild);
   }
-  getSuggestions();
+  shortenUrl();
 }
 
-submit.addEventListener('click', displaySuggestions);
+shortenButton.addEventListener('click', displayShortUrl);
 
