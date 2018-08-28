@@ -1,16 +1,15 @@
-let words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+let cities = ['Nashville', 'Charlotte', 'Asheville', 'Austin', 'Boulder'];
 
-// Something is missing in the method call below
+let nums = [1, 50, 75, 200, 350, 525, 1000];
 
-console.log(words.some(function(word) {
-  return word.length < 6;
-}));
+//  Choose a method that will return undefined
+cities.forEach(city => console.log('Have you visited ' + city + '?'));
 
-// Use filter to create a new array
+// Choose a method that will return a new array
+let longCities = cities.filter(city => city.length > 7);
 
-let interestingWords = words.filter(word => word.length > 5);
+// Choose a method that will return a new array
+let smallerNums = nums.map(num => num - 5);
 
-// Make sure to uncomment the code below and fix the incorrect code before running it
-
-console.log(interestingWords.every(word =>  word.length > 5      ));
-
+// Choose a method that will return a boolean value
+nums.some(num => num < 0);
