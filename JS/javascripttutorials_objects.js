@@ -2,10 +2,24 @@ let person = {
     name: 'Hannah',
     age: 28,
     weekendAlarm: 'No alarms needed',
-    weekAlarm: 'Alarm set to 7AM'
+    weekAlarm: 'Alarm set to 7AM',
+    
+    sayHello: function() {
+      return 'Hello, there!';
+    },
+    
+    sayGoodbye() {
+      return 'Goodbye!';
+    }
+    
   };
   
-  person.hobbies = ['bike', 'hike', 'run']
+  console.log(person.sayHello());
+  
+  person.hobbies = ['Basketball', 'Coaching'];
+  person.hobbies = ['Basketball'];
+  console.log(person.hobbies);
+  
   
   console.log(person['name']);
   console.log(person['age']);
@@ -20,7 +34,4 @@ let person = {
   }
   
   console.log(person[alarm]);
-  console.log(person.hobbies)
-  person.hobbies =['run']
-  console.log(person.hobbies)
   
